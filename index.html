@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Valente - Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de Gabriel Valente - Desenvolvedor Full Stack especializado em C#, JavaScript, React e tecnologias modernas">
+    <meta name="keywords" content="Gabriel Valente, Desenvolvedor Full Stack, C#, JavaScript, React, Portfolio">
+    <meta name="author" content="Gabriel Valente">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-name">Gabriel</span><span class="logo-surname">Valente</span>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <span class="nav-icon">🏠</span>
+                        <span>Início</span>
+                    </a>
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="nav-icon">👤</span>
+                        <span>Sobre</span>
+                    </a>
+                    <a href="#experience" class="nav-link" data-section="experience">
+                        <span class="nav-icon">💼</span>
+                        <span>Experiência</span>
+                    </a>
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <span class="nav-icon">🚀</span>
+                        <span>Projetos</span>
+                    </a>
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <span class="nav-icon">⚡</span>
+                        <span>Habilidades</span>
+                    </a>
+                    <a href="#education" class="nav-link" data-section="education">
+                        <span class="nav-icon">🎓</span>
+                        <span>Formação</span>
+                    </a>
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="nav-icon">📧</span>
+                        <span>Contato</span>
+                    </a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-nav-link" data-section="home">
+                <span class="nav-icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="#about" class="mobile-nav-link" data-section="about">
+                <span class="nav-icon">👤</span>
+                <span>Sobre</span>
+            </a>
+            <a href="#experience" class="mobile-nav-link" data-section="experience">
+                <span class="nav-icon">💼</span>
+                <span>Experiência</span>
+            </a>
+            <a href="#projects" class="mobile-nav-link" data-section="projects">
+                <span class="nav-icon">🚀</span>
+                <span>Projetos</span>
+            </a>
+            <a href="#skills" class="mobile-nav-link" data-section="skills">
+                <span class="nav-icon">⚡</span>
+                <span>Habilidades</span>
+            </a>
+            <a href="#education" class="mobile-nav-link" data-section="education">
+                <span class="nav-icon">🎓</span>
+                <span>Formação</span>
+            </a>
+            <a href="#contact" class="mobile-nav-link" data-section="contact">
+                <span class="nav-icon">📧</span>
+                <span>Contato</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">Desenvolvedor Full Stack</div>
+                        <h1 class="hero-title">
+                            Gabriel <span class="hero-highlight">Valente</span>
+                        </h1>
+                        <p class="hero-description">
+                            Especialista em C# e JavaScript, criando soluções inovadoras e eficientes para o mundo digital.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                                <span class="btn-icon">🚀</span>
+                                Ver Projetos
+                            </button>
+                            <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                                <span class="btn-icon">📧</span>
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-photo">
+                            <img src="assets/gabriel-photo.jpg" alt="Gabriel Valente" class="photo">
+                            <div class="photo-badge">
+                                <span class="photo-icon">💻</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">
+                    Sobre <span class="title-highlight">Mim</span>
+                </h2>
+                <div class="about-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <span class="card-icon">🎯</span>
+                                Objetivo Profissional
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Programador Full Stack em constante aprendizado e adaptação ao mercado de trabalho. Busco sempre entregar soluções de qualidade e contribuir para o crescimento das equipes.</p>
+                            <div class="location">
+                                <span class="location-icon">📍</span>
+                                <span>Vila Perus, São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <span class="card-icon">👥</span>
+                                Soft Skills
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-icon">💬</span>
+                                    <span>Excelente capacidade oratória</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">👥</span>
+                                    <span>Trabalho solo e em equipe</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">🏆</span>
+                                    <span>Boa liderança e qualidade individual</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">⚡</span>
+                                    <span>Receptor de críticas e apto a melhora</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <span class="card-icon">🌍</span>
+                                Idiomas
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="language-item">
+                                <div class="language-header">
+                                    <span>Português</span>
+                                    <span class="language-level">Nativo</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-header">
+                                    <span>Inglês</span>
+                                    <span class="language-level">Avançado</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <div class="language-header">
+                                    <span>Espanhol</span>
+                                    <span class="language-level">Básico</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <span class="card-icon">🌐</span>
+                                Interesses
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-icon">💻</span>
+                                    <span>Desenvolvimento de Software</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">🎮</span>
+                                    <span>Gaming (League of Legends)</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">⚡</span>
+                                    <span>Novas Tecnologias</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-icon">👥</span>
+                                    <span>Trabalho em Equipe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">
+                    Experiência <span class="title-highlight">Profissional</span>
+                </h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Desenvolvedor Full Stack</h3>
+                                <p class="experience-company">Freelancer</p>
+                            </div>
+                            <div class="experience-period">2024 - Presente</div>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Desenvolvimento de projetos em equipe para empresas de diversas áreas, utilizando principalmente C# e JavaScript.
+                            </p>
+                            <div class="experience-skills">
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">.NET</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Auxiliar de Escritório</h3>
+                                <p class="experience-company">Empresa Local</p>
+                            </div>
+                            <div class="experience-period">2023 - 2024</div>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Suporte administrativo e desenvolvimento de pequenas automações para otimização de processos.
+                            </p>
+                            <div class="experience-skills">
+                                <span class="skill-tag">Excel</span>
+                                <span class="skill-tag">VBA</span>
+                                <span class="skill-tag">Organização</span>
+                                <span class="skill-tag">Comunicação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">
+                    Meus <span class="title-highlight">Projetos</span>
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🏢</div>
+                            <div class="project-info">
+                                <h3 class="project-title">Sistema de Gestão Empresarial</h3>
+                                <div class="project-status status-completed">Concluído</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Aplicação completa para gestão de empresas desenvolvida em C# com interface moderna e banco de dados robusto.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">WPF</span>
+                            </div>
+                            <button class="project-btn">
+                                <span class="btn-icon">🔗</span>
+                                Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🛒</div>
+                            <div class="project-info">
+                                <h3 class="project-title">API RESTful E-commerce</h3>
+                                <div class="project-status status-development">Em desenvolvimento</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                API completa para sistema de e-commerce com autenticação, pagamentos e gestão de produtos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">Entity Framework</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                            <button class="project-btn">
+                                <span class="btn-icon">🔗</span>
+                                Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">📊</div>
+                            <div class="project-info">
+                                <h3 class="project-title">Dashboard Analytics</h3>
+                                <div class="project-status status-completed">Concluído</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Dashboard interativo para análise de dados com gráficos em tempo real e relatórios personalizados.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                            <button class="project-btn">
+                                <span class="btn-icon">🔗</span>
+                                Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">📱</div>
+                            <div class="project-info">
+                                <h3 class="project-title">App Mobile React Native</h3>
+                                <div class="project-status status-planned">Planejado</div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Aplicativo mobile para gestão de tarefas com sincronização em nuvem e notificações push.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                            <button class="project-btn">
+                                <span class="btn-icon">🔗</span>
+                                Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">
+                    Minhas <span class="title-highlight">Habilidades</span>
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🔷</span>
+                            <span class="skill-name">C#</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🟨</span>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">⚛️</span>
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🔵</span>
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🟣</span>
+                            <span class="skill-name">.NET</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🟠</span>
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🔵</span>
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">⚫</span>
+                            <span class="skill-name">Next.js</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="70"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🔴</span>
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item-large">
+                        <div class="skill-header">
+                            <span class="skill-icon-large">🗄️</span>
+                            <span class="skill-name">PL/SQL</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title">
+                    Formação <span class="title-highlight">Acadêmica</span>
+                </h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-title">Engenharia de Software</h3>
+                                <p class="education-institution">Faculdade Anhanguera</p>
+                            </div>
+                            <div class="education-meta">
+                                <div class="education-status status-progress">Em andamento</div>
+                                <div class="education-period">2025 - 2029</div>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p class="education-description">
+                                Bacharelado focado em desenvolvimento de software, metodologias ágeis e arquitetura de sistemas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-title">XP Inc. - Full Stack Developer</h3>
+                                <p class="education-institution">DIO (Digital Innovation One)</p>
+                            </div>
+                            <div class="education-meta">
+                                <div class="education-status status-completed">Concluído</div>
+                                <div class="education-period">2025</div>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p class="education-description">
+                                Bootcamp intensivo cobrindo tecnologias front-end e back-end modernas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-title">BootCamp em C#</h3>
+                                <p class="education-institution">Plataforma Online</p>
+                            </div>
+                            <div class="education-meta">
+                                <div class="education-status status-completed">Concluído</div>
+                                <div class="education-period">2022</div>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p class="education-description">
+                                Curso intensivo de C# cobrindo desde fundamentos até desenvolvimento avançado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <div class="education-info">
+                                <h3 class="education-title">Curso de Lógica de Programação</h3>
+                                <p class="education-institution">Governo Federal</p>
+                            </div>
+                            <div class="education-meta">
+                                <div class="education-status status-completed">Concluído</div>
+                                <div class="education-period">2020</div>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p class="education-description">
+                                Fundamentos de programação e desenvolvimento de raciocínio lógico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">
+                    Entre em <span class="title-highlight">Contato</span>
+                </h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Vamos Conversar!</h3>
+                        <p class="contact-description">
+                            Estou sempre aberto a novas oportunidades e projetos interessantes. 
+                            Entre em contato comigo através dos canais abaixo.
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:gabrielfvalente18@gmail.com" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                <span>gabrielfvalente18@gmail.com</span>
+                            </a>
+                            <a href="tel:+5511987656124" class="contact-link">
+                                <span class="contact-icon">📱</span>
+                                <span>(11) 987656124</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gabriel-valente-86213427a/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <span class="contact-icon">💼</span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Beikoz" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <span class="contact-icon">🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://op.gg/pt/lol/summoners/br/BEIK%C3%83O%20FOD%C3%83O%20666-MORTE" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <span class="contact-icon">🎮</span>
+                                <span>OP.GG Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-visual">
+                        <div class="contact-circle">
+                            <span class="contact-circle-icon">💻</span>
+                        </div>
+                        <p class="contact-message">
+                            Pronto para criar algo incrível juntos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 Gabriel Valente. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
