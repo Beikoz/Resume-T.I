@@ -44,7 +44,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(27, 40, 56, 0.95);
+    background: rgba(0, 115, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--steam-border);
     z-index: 1000;
